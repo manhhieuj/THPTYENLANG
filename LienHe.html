@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ - Trường THPT Yên Lãng</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Trang Liên Hệ */
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .container {
+            max-width: 1400px; /* Increased max-width for wider content area */
+            margin: 0 auto;
+            padding: 0 1rem; /* Keeping padding at 1rem (16px) */
+        }
+        .section-title {
+            font-size: 2.25rem; /* text-4xl */
+            font-weight: 700; /* font-bold */
+            color: #1a202c; /* gray-900 */
+            text-align: center;
+            margin-bottom: 2.5rem; /* mb-10 */
+        }
+        .text-content p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+            color: #4a5568; /* gray-700 */
+        }
+        .contact-person-card {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .contact-person-card h3 {
+            font-weight: 600; /* font-semibold */
+            font-size: 1.25rem; /* text-xl */
+            color: #2d3748; /* gray-800 */
+            margin-bottom: 0.5rem;
+        }
+        .contact-person-card p {
+            font-size: 0.9rem; /* text-sm */
+            color: #4a5568; /* gray-700 */
+            margin-bottom: 0.25rem;
+        }
+        .footer-link-group a {
+            color: #555;
+            transition: color 0.2s;
+        }
+        .footer-link-group a:hover {
+            color: #007bff; /* Example hover color */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm py-4">
+        <div class="container flex justify-between items-center">
+            <div class="text-lg font-semibold text-gray-800">Trường THPT Yên Lãng</div>
+            <nav>
+                 <ul class="flex space-x-6">
+                    <li><a href="TrangChu.html" class="text-gray-600 hover:text-blue-600 font-medium">Trang Chủ</a></li>
+                    <li><a href="GioiThieu.html" class="text-gray-600 hover:text-blue-600 font-medium">Giới Thiệu</a></li>
+                    <li><a href="ThuVienAnh.html" class="text-gray-600 hover:text-blue-600 font-medium">Thư Viện Ảnh</a></li>
+                    <li><a href="GopY.html" class="text-gray-600 hover:text-blue-600 font-medium">Góp Ý</a></li>
+                    <li><a href="DanhGia.html" class="text-gray-600 hover:text-blue-600 font-medium">Đánh Giá</a></li>
+                    <li><a href="LienHe.html" class="text-gray-600 hover:text-blue-600 font-medium">Liên Hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section - Contact Page -->
+    <main class="py-10">
+        <div class="container grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <!-- Left Column: Contact Information and Form -->
+            <div>
+                <h1 class="text-4xl font-bold text-gray-900 mb-6">LIÊN HỆ</h1>
+                <p class="text-lg text-gray-700 mb-8">Hãy kết nối với chúng tôi</p>
+
+                <!-- New introductory paragraph based on the image -->
+                <div class="text-content mb-8">
+                    <p>Chúng tôi luôn mong muốn mang lại những ý nghĩa từ học sinh, phụ huynh, cựu học sinh và toàn thể cộng đồng. Mọi góp ý, phản hồi hay đề xuất từ bạn chính là nguồn động lực để nhà trường hoàn thiện trang web ngày càng tiện lợi, đầy đủ và dễ sử dụng hơn. Hãy liên hệ với chúng tôi để cùng nhau xây dựng một cộng đồng thông tin đa dạng, minh bạch và hiệu quả – nơi mọi người có thể dễ dàng tra cứu thông tin, kết nối và đồng hành cùng sự phát triển toàn diện của nhà trường.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Gửi tin nhắn cho chúng tôi</h2>
+                    <form>
+                        <div class="mb-4">
+                            <label for="contact-name" class="block text-gray-700 text-sm font-bold mb-2">Họ và tên:</label>
+                            <input type="text" id="contact-name" name="name" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Nhập họ và tên của bạn">
+                        </div>
+                        <div class="mb-4">
+                            <label for="contact-email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+                            <input type="email" id="contact-email" name="email" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Nhập email của bạn">
+                        </div>
+                        <div class="mb-6">
+                            <label for="contact-message" class="block text-gray-700 text-sm font-bold mb-2">Nội dung tin nhắn:</label>
+                            <textarea id="contact-message" name="message" rows="6" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Nhập tin nhắn của bạn vào đây..."></textarea>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg focus:outline-none focus:shadow-outline transition duration-200 ease-in-out">
+                                Gửi
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Right Column: Images and Contact Persons -->
+            <div>
+                <div class="mb-8 rounded-lg overflow-hidden shadow-lg">
+                    <img src="/WEB/2025.jpg" alt="Ảnh minh họa liên hệ" class="w-full h-auto object-cover">
+                </div>
+
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">Phản hồi:</h2>
+                <div class="grid grid-cols-1 gap-6">
+                    <!-- Contact Person 1 -->
+                    <div class="contact-person-card">
+                        <h3>Em Bùi Mạnh Hiếu, Lớp 12A1</h3>
+                        <p>Chức vụ: Trưởng ban truyền thông học sinh</p>
+                        <p>Email: hieu.bm@yenlang.edu.vn</p>
+                        <p>Số điện thoại: 0912 345 678</p>
+                        <p class="text-gray-600 text-sm mt-2">"Luôn sẵn sàng hỗ trợ các bạn học sinh về các vấn đề liên quan đến học tập và hoạt động ngoại khóa."</p>
+                    </div>
+                    <!-- Contact Person 2 -->
+                    <div class="contact-person-card">
+                        <h3>Cô Lê Thị Mai, phụ huynh học sinh lớp 10B1</h3>
+                        <p>Chức vụ: Đại diện Hội Phụ huynh học sinh</p>
+                        <p>Email: mai.lt@yenlang.edu.vn</p>
+                        <p>Số điện thoại: 0987 654 321</p>
+                        <p class="text-gray-600 text-sm mt-2">"Luôn lắng nghe ý kiến đóng góp từ các bậc phụ huynh để cùng nhà trường xây dựng môi trường giáo dục tốt nhất."</p>
+                    </div>
+                    <!-- Contact Person 3 -->
+                    <div class="contact-person-card">
+                        <h3>Thầy Trần Anh Dũng, giáo viên môn Toán</h3>
+                        <p>Chức vụ: Tổ trưởng tổ Toán</p>
+                        <p>Email: dung.ta@yenlang.edu.vn</p>
+                        <p>Số điện thoại: 0901 234 567</p>
+                        <p class="text-gray-600 text-sm mt-2">"Sẵn lòng giải đáp mọi thắc mắc về chương trình học và phương pháp giảng dạy."</p>
+                    </div>
+                    <!-- Contact Person 4 -->
+                    <div class="contact-person-card">
+                        <h3>Em Nguyễn Trần Phương Linh</h3>
+                        <p>Chức vụ: Bí thư Đoàn trường</p>
+                        <p>Email: linh.ntp@yenlang.edu.vn</p>
+                        <p>Số điện thoại: 0934 567 890</p>
+                        <p class="text-gray-600 text-sm mt-2">"Luôn đồng hành cùng các bạn học sinh trong mọi hoạt động Đoàn thể và phong trào của trường."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Political Slogan Image -->
+        <div class="container mt-10">
+            <div class="mb-10 rounded-lg overflow-hidden shadow-lg">
+                <img src="/WEB/h.jpg" alt="Đảng Cộng sản Việt Nam Quang vinh muôn năm" class="w-full h-auto object-cover">
+                <p class="text-center text-gray-600 text-sm mt-2">ĐẠI HỘI CHI BỘ TRƯỜNG THPT YÊN LÃNG NHIỆM KỲ 2025 – 2030</p>
+                <p class="text-center text-gray-600 text-sm">Ngày 10/5/2025, Chi bộ Trường THPT Yên Lãng long trọng tổ chức Đại hội Chi bộ nhiệm kỳ 2025-2030</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+   <!-- Footer Section -->
+    <footer class="bg-gray-100 py-8 mt-10 border-t border-gray-200">
+        <div
+            class="container flex flex-col md:flex-row justify-between items-center md:items-start text-center md:text-left">
+            <!-- Contact Info -->
+            <div class="mb-6 md:mb-0">
+                <h4 class="text-lg font-semibold mb-2 text-gray-800">Kết nối với chúng tôi</h4>
+                <p class="text-gray-600 text-sm">Địa chỉ: Đường Yên Lãng, Huyện Yên Lãng, Hà Nội</p>
+                <p class="text-gray-600 text-sm">Điện thoại: (024) 3888 8888</p>
+                <p class="text-gray-600 text-sm">Email: info@yenlang.edu.vn</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="mb-6 md:mb-0 footer-link-group">
+                <h4 class="text-lg font-semibold mb-2 text-gray-800">Liên kết nhanh</h4>
+                <ul>
+                    <li><a href="GioiThieu.html" target="_blank" class="text-sm block py-1">Giới thiệu</a></li>
+                    <li><a href="TrangChu.html" target="_blank" class="text-sm block py-1">Tin tức</a></li>
+                    <li><a href="ThuVienAnh.html" target="_blank" class="text-sm block py-1">Thư viện ảnh</a></li>
+                    <li><a href="LienHe.html" target="_blank" class="text-sm block py-1">Liên hệ</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div class="footer-link-group">
+                <h4 class="text-lg font-semibold mb-2 text-gray-800">Mạng xã hội</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/manhhieuj" target="_blank"
+                            class="text-sm block py-1">Facebook</a></li>
+                    <li><a href="https://open.spotify.com/user/31pt67ndzv5dtyu3ef5tj4iy4hjy?si=5d8795206402479d"
+                            target="_blank" class="text-sm block py-1">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/@manhhieuj007" target="_blank"
+                            class="text-sm block py-1">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container text-center text-gray-500 text-sm mt-8 pt-4 border-t border-gray-200">
+            &copy; 2023 Trường THPT Yên Lãng. Bảo lưu mọi quyền.
+        </div>
+    </footer>
+</body>
+</html>

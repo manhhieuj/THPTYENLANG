@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trường THPT Yên Lãng - Trang Chủ</title>
+    <!-- Tải Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tải Font Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Custom styles for image overlays/captions if needed */
+        .image-card img {
+            width: 100%;
+            height: 200px;
+            /* Fixed height for consistency */
+            object-fit: cover;
+            /* Cover the area, cropping if necessary */
+            border-radius: 0.5rem;
+        }
+
+        .footer-link-group a {
+            color: #555;
+            transition: color 0.2s;
+        }
+
+        .footer-link-group a:hover {
+            color: #007bff;
+            /* Example hover color */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm py-4">
+        <div class="container flex justify-between items-center">
+            <div class="text-lg font-semibold text-gray-800">Trường THPT Yên Lãng</div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="TrangChu.html" class="text-gray-600 hover:text-blue-600 font-medium">Trang Chủ</a></li>
+                    <li><a href="GioiThieu.html" class="text-gray-600 hover:text-blue-600 font-medium">Giới Thiệu</a></li>
+                    <li><a href="ThuVienAnh.html" class="text-gray-600 hover:text-blue-600 font-medium">Thư Viện Ảnh</a></li>
+                    <li><a href="GopY.html" class="text-gray-600 hover:text-blue-600 font-medium">Góp Ý</a></li>
+                    <li><a href="DanhGia.html" class="text-gray-600 hover:text-blue-600 font-medium">Đánh Giá</a></li>
+                    <li><a href="LienHe.html" class="text-gray-600 hover:text-blue-600 font-medium">Liên Hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with large image -->
+    <section class="w-full h-64 bg-gray-300 relative overflow-hidden">
+        <img src="../WEB/Banne.jpg" alt="Ảnh trường THPT Yên Lãng" class="absolute inset-0 w-full h-full object-cover">
+        <!-- Overlay for text or other elements if needed -->
+        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+            <!-- Text or title can go here if present in the original image -->
+        </div>
+    </section>
+
+    <!-- News and Events Section -->
+    <section class="py-10">
+        <div class="container">
+            <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">TIN TỨC SỰ KIỆN</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- News Card 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="../WEB/60Nam.jpg" alt="Tin tức 1" class="image-card-img">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2 text-gray-700">Kỷ niệm 60 năm thành lập trường</h3>
+                        <p class="text-gray-600 text-sm">Trường THPT Yên Lãng kỷ niệm 60 năm thành lập với nhiều hoạt
+                            động ý nghĩa...</p>
+                        <a href="TinTuc1.html" target="_blank"
+                            class="text-blue-600 text-sm mt-2 inline-block hover:underline">Xem thêm</a>
+                    </div>
+                </div>
+                <!-- News Card 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="../WEB/Vinhdanh.jpg" alt="Tin tức 2" class="image-card-img">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2 text-gray-700">Vinh Danh Học sinh tiêu biểu kỳ thi THPT
+                        </h3>
+                        <p class="text-gray-600 text-sm">Chúc mừng 12 bạn đã thành tích xuất sắc.</p>
+                        <a href="TinTuc2.html" target="_blank"
+                            class="text-blue-600 text-sm mt-2 inline-block hover:underline">Xem thêm</a>
+                    </div>
+                </div>
+                <!-- News Card 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="../WEB/Tượng BÁC.jpg" alt="Tin tức 3" class="image-card-img">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2 text-gray-700">Tượng chân dung Chủ tịch HỒ CHÍ MINH</h3>
+                        <p class="text-gray-600 text-sm">Mới đây nhà trường được cựu học sinh tặng bức tự chân dung BÁC
+                        </p>
+                        <a href="TinTuc3.html" target="_blank"
+                            class="text-blue-600 text-sm mt-2 inline-block hover:underline">Xem thêm</a>
+                    </div>
+                </div>
+                <!-- News Card 4 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="../WEB/anhhieuchiase.jpg" alt="Tin tức 4" class="image-card-img">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2 text-gray-700">Hiếu PC "bật mí"</h3>
+                        <p class="text-gray-600 text-sm">Ngô Minh Hiếu(Hiếu PC) đã có dịp chia sẻ kinh nghiệm chống lừa
+                            đảo cho các bạn học sinh THPT Yên Lãng</p>
+                        <a href="TinTuc4.html" target="_blank"
+                            class="text-blue-600 text-sm mt-2 inline-block hover:underline">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Reflections Section -->
+    <section class="py-10 bg-white">
+        <div class="container">
+            <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Cảm nghĩ học sinh</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Reflection 1 -->
+                <div class="flex flex-col md:flex-row items-center md:items-start bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <img src="../WEB/2008.JPEG" alt="Học sinh 1"
+                        class="w-24 h-24 rounded-full object-cover mb-4 md:mb-0 md:mr-6">
+                    <div>
+                        <h3 class="font-semibold text-xl text-gray-700 mb-2">Em Bùi Mạnh Hiếu</h3>
+                        <p class="text-gray-600 text-base leading-relaxed">"Trường THPT Yên Lãng không chỉ là nơi học
+                            tập mà còn là ngôi nhà thứ hai của em. Em đã có những trải nghiệm tuyệt vời tại đây, được
+                            thầy cô và bạn bè luôn yêu thương, giúp đỡ."</p>
+                    </div>
+                </div>
+                <!-- Reflection 2 -->
+                <div class="flex flex-col md:flex-row items-center md:items-start bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <img src="../WEB/9.jpg" alt="Học sinh 2"
+                        class="w-24 h-24 rounded-full object-cover mb-4 md:mb-0 md:mr-6">
+                    <div>
+                        <h3 class="font-semibold text-xl text-gray-700 mb-2">Trần Phương Linh</h3>
+                        <p class="text-gray-600 text-base leading-relaxed">"Em rất tự hào khi là học sinh của trường.
+                            Môi trường học tập năng động, cơ sở vật chất hiện đại đã giúp em phát triển toàn diện."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Gallery Section (similar to the bottom part of TRANG CHỦ.jpg) -->
+    <section class="py-10">
+        <div class="container">
+            <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">HÌNH ẢNH HOẠT ĐỘNG</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="rounded-lg overflow-hidden shadow-md">
+                    <img src="../WEB/caodangfpt.jpg" alt="Hoạt động 1" class="w-full h-auto object-cover rounded-md">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-md">
+                    <img src="../WEB/tuyensinh.jpg" alt="Hoạt động 2" class="w-full h-auto object-cover rounded-md">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-md">
+                    <img src="../WEB/lebengiang.jpg" alt="Hoạt động 3" class="w-full h-auto object-cover rounded-md">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-md">
+                    <img src="../WEB/a.jpg" alt="Hoạt động 4" class="w-full h-auto object-cover rounded-md">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-md">
+                    <img src="../WEB/7.jpg" alt="Hoạt động 5" class="w-full h-auto object-cover rounded-md">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-md">
+                    <img src="/WEB/3.jpg" alt="Hoạt động 6" class="w-full h-auto object-cover rounded-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-100 py-8 mt-10 border-t border-gray-200">
+        <div
+            class="container flex flex-col md:flex-row justify-between items-center md:items-start text-center md:text-left">
+            <!-- Contact Info -->
+            <div class="mb-6 md:mb-0">
+                <h4 class="text-lg font-semibold mb-2 text-gray-800">Kết nối với chúng tôi</h4>
+                <p class="text-gray-600 text-sm">Địa chỉ: Đường Yên Lãng, Huyện Yên Lãng, Hà Nội</p>
+                <p class="text-gray-600 text-sm">Điện thoại: (024) 3888 8888</p>
+                <p class="text-gray-600 text-sm">Email: info@yenlang.edu.vn</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="mb-6 md:mb-0 footer-link-group">
+                <h4 class="text-lg font-semibold mb-2 text-gray-800">Liên kết nhanh</h4>
+                <ul>
+                    <li><a href="GioiThieu.html" target="_blank" class="text-sm block py-1">Giới thiệu</a></li>
+                    <li><a href="TrangChu.html" target="_blank" class="text-sm block py-1">Tin tức</a></li>
+                    <li><a href="ThuVienAnh.html" target="_blank" class="text-sm block py-1">Thư viện ảnh</a></li>
+                    <li><a href="LienHe.html" target="_blank" class="text-sm block py-1">Liên hệ</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div class="footer-link-group">
+                <h4 class="text-lg font-semibold mb-2 text-gray-800">Mạng xã hội</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/manhhieuj" target="_blank"
+                            class="text-sm block py-1">Facebook</a></li>
+                    <li><a href="https://open.spotify.com/user/31pt67ndzv5dtyu3ef5tj4iy4hjy?si=5d8795206402479d"
+                            target="_blank" class="text-sm block py-1">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/@manhhieuj007" target="_blank"
+                            class="text-sm block py-1">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container text-center text-gray-500 text-sm mt-8 pt-4 border-t border-gray-200">
+            &copy; 2023 Trường THPT Yên Lãng. Bảo lưu mọi quyền.
+        </div>
+    </footer>
+</body>
+
+</html>

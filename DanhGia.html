@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đánh Giá - Trường THPT Yên Lãng</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Trang Đánh Giá */
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px; /* Keeping original max-width for consistency with other pages */
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        .section-title {
+            font-size: 2.25rem; /* text-4xl */
+            font-weight: 700; /* font-bold */
+            color: #1a202c; /* gray-900 */
+            text-align: center;
+            margin-bottom: 2.5rem; /* mb-10 */
+        }
+        .text-content p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+            color: #4a5568; /* gray-700 */
+        }
+        .footer-link-group a {
+            color: #555;
+            transition: color 0.2s;
+        }
+        .footer-link-group a:hover {
+            color: #007bff; /* Example hover color */
+        }
+        /* Clearfix for floating elements (not needed with current structure but kept for safety) */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm py-4">
+        <div class="container flex justify-between items-center">
+            <div class="text-lg font-semibold text-gray-800">Trường THPT Yên Lãng</div>
+            <nav>
+                <ul class="flex space-x-6">
+                     <li><a href="TrangChu.html" class="text-gray-600 hover:text-blue-600 font-medium">Trang Chủ</a></li>
+                    <li><a href="GioiThieu.html" class="text-gray-600 hover:text-blue-600 font-medium">Giới Thiệu</a></li>
+                    <li><a href="ThuVienAnh.html" class="text-gray-600 hover:text-blue-600 font-medium">Thư Viện Ảnh</a></li>
+                    <li><a href="GopY.html" class="text-gray-600 hover:text-blue-600 font-medium">Góp Ý</a></li>
+                    <li><a href="DanhGia.html" class="text-gray-600 hover:text-blue-600 font-medium">Đánh Giá</a></li>
+                    <li><a href="LienHe.html" class="text-gray-600 hover:text-blue-600 font-medium">Liên Hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section - Review Page -->
+    <main class="py-10">
+        <div class="container grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <!-- Left Column: Introduction, Text Content, and Image -->
+            <div>
+                <h1 class="text-4xl font-bold text-gray-900 mb-6">ĐÁNH GIÁ</h1>
+                <p class="text-lg text-gray-700 mb-8">Hãy chia sẻ trải nghiệm của bạn nhé.</p>
+
+                <div class="text-content mb-8">
+                    <p>Trang web này được xây dựng nhằm giới thiệu tổng quan về Trường THPT Yên Lãng, một ngôi trường có bề dày lịch sử, đầy đủ và chính xác nhất về môi trường đào tạo, định hướng phát triển trường học trong tương lai, cũng như các hoạt động của trường.</p>
+                    <p>Chúng tôi tập trung vào việc cung cấp thông tin rõ ràng, có cấu trúc, dễ hiểu, giúp học sinh, phụ huynh và giáo viên dễ dàng tìm kiếm thông tin cần thiết. Đồng thời, trang web cũng là nơi để chia sẻ những thành tựu, hoạt động nổi bật của trường, góp phần quảng bá hình ảnh và uy tín của nhà trường.</p>
+                    <p>Với mục tiêu tạo ra một cộng đồng trực tuyến năng động, trang web còn là nơi để học sinh, giáo viên và phụ huynh có thể giao lưu, chia sẻ kinh nghiệm, ý kiến đóng góp, cùng nhau xây dựng một môi trường giáo dục ngày càng tốt đẹp hơn.</p>
+                    <p>Chúng tôi mong muốn đây sẽ là nơi giúp các bạn học sinh tiếp cận thông tin nhanh chóng, chính xác, đồng thời cũng là nơi để mọi người cùng mang lại giá trị và tạo ra nhiều thế hệ học sinh tài năng, có ích cho xã hội. Chúng tôi tin rằng, với sự đóng góp của bạn, trang web sẽ ngày càng hoàn thiện và trở thành một công cụ hữu ích cho cộng đồng trường học.</p>
+                </div>
+
+                <!-- Image placed here to align with the form on the right -->
+                <div class="mb-8 rounded-lg overflow-hidden shadow-lg">
+                    <img src="/WEB/Banne.jpg" alt="Ảnh minh họa đánh giá" class="w-full h-auto object-cover">
+                </div>
+            </div>
+
+            <!-- Right Column: Image and Feedback Form -->
+            <div>
+                <div class="mb-8 rounded-lg overflow-hidden shadow-lg">
+                    <img src="/WEB/2025.jpg" alt="Ảnh minh họa đánh giá" class="w-full h-auto object-cover">
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Liên hệ để đánh giá</h2>
+                    <form>
+                        <div class="mb-4">
+                            <label for="review-name" class="block text-gray-700 text-sm font-bold mb-2">Họ và tên:</label>
+                            <input type="text" id="review-name" name="name" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Nhập họ và tên của bạn">
+                        </div>
+                        <div class="mb-4">
+                            <label for="review-email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+                            <input type="email" id="review-email" name="email" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Nhập email của bạn">
+                        </div>
+                        <div class="mb-6">
+                            <label for="review-content" class="block text-gray-700 text-sm font-bold mb-2">Nội dung góp ý:</label>
+                            <textarea id="review-content" name="feedback" rows="6" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Nhập ý kiến đóng góp của bạn vào đây..."></textarea>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg focus:outline-none focus:shadow-outline transition duration-200 ease-in-out">
+                                Gửi
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+   <!-- Footer Section -->
+   <!-- Footer Section -->
+    <footer class="bg-gray-100 py-8 mt-10 border-t border-gray-200">
+        <div
+            class="container flex flex-col md:flex-row justify-between items-center md:items-start text-center md:text-left">
+            <!-- Contact Info -->
+            <div class="mb-6 md:mb-0">
+                <h4 class="text-lg font-semibold mb-2 text-gray-800">Kết nối với chúng tôi</h4>
+                <p class="text-gray-600 text-sm">Địa chỉ: Đường Yên Lãng, Huyện Yên Lãng, Hà Nội</p>
+                <p class="text-gray-600 text-sm">Điện thoại: (024) 3888 8888</p>
+                <p class="text-gray-600 text-sm">Email: info@yenlang.edu.vn</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="mb-6 md:mb-0 footer-link-group">
+                <h4 class="text-lg font-semibold mb-2 text-gray-800">Liên kết nhanh</h4>
+                <ul>
+                    <li><a href="GioiThieu.html" target="_blank" class="text-sm block py-1">Giới thiệu</a></li>
+                    <li><a href="TrangChu.html" target="_blank" class="text-sm block py-1">Tin tức</a></li>
+                    <li><a href="ThuVienAnh.html" target="_blank" class="text-sm block py-1">Thư viện ảnh</a></li>
+                    <li><a href="LienHe.html" target="_blank" class="text-sm block py-1">Liên hệ</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div class="footer-link-group">
+                <h4 class="text-lg font-semibold mb-2 text-gray-800">Mạng xã hội</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/manhhieuj" target="_blank"
+                            class="text-sm block py-1">Facebook</a></li>
+                    <li><a href="https://open.spotify.com/user/31pt67ndzv5dtyu3ef5tj4iy4hjy?si=5d8795206402479d"
+                            target="_blank" class="text-sm block py-1">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/@manhhieuj007" target="_blank"
+                            class="text-sm block py-1">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container text-center text-gray-500 text-sm mt-8 pt-4 border-t border-gray-200">
+            &copy; 2023 Trường THPT Yên Lãng. Bảo lưu mọi quyền.
+        </div>
+    </footer>
+</body>
+</html>
